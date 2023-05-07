@@ -1,0 +1,116 @@
+.experiences {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0 2rem 0 2rem;
+  flex: 1;
+
+  .experience-icon {
+    width: 20vw;
+    margin-bottom: 1rem;
+    filter: drop-shadow(0 0 4px #50b5d7);
+    filter: drop-shadow(0 0 100px rgb(80, 181, 215));
+  }
+
+  .experiences-container {
+    display: flex;
+    height: 70vh;
+    width: 90vw;
+    overflow: scroll;
+    scroll-snap-type: x mandatory;
+
+    .experience {
+      position: sticky;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      scroll-snap-align: center;
+      margin-right: 4rem;
+      padding: 1rem;
+
+      h1 {
+        font-weight: 600;
+        color: #50b5d7;
+        text-align: center;
+        filter: drop-shadow(0 0 0 #FFFFFF);
+        margin-bottom: 1rem;
+      }
+
+      img {
+        width: 80vw;
+        height: 180px;
+        border-radius: 20px;
+        margin-bottom: 2rem;
+      }
+
+      .description {
+        margin: 1rem;
+        font-weight: 300;
+
+        span {
+          font-weight: 600;
+        }
+      }
+
+      .right-icons {
+        position: absolute;
+        right: 0;
+        top: 200px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+
+        .redirect {
+          background-color: #50b5d7;
+          border-radius: 50%;
+          height: 60px;
+          width: 60px;
+          padding: .5rem;
+          margin-left: 1rem;
+          box-sizing: border-box;
+          cursor: pointer;
+        }
+
+        .first-tech {
+          background-color: #50b5d7;
+          border-radius: 50%;
+          height: 60px;
+          width: 60px;
+          padding: .5rem;
+          box-sizing: border-box;
+          margin-right: 1rem;
+        }
+  
+        .second-tech {
+          background-color: #50b5d7;
+          border-radius: 50%;
+          height: 60px;
+          width: 60px;
+          padding: .5rem;
+          box-sizing: border-box;
+        }
+
+        .next {
+          background-color: #FFFFFF;
+          border-radius: 50%;
+          height: 60px;
+          width: 60px;
+          box-sizing: border-box;
+          margin-right: 1rem;
+        }
+      }
+    }
+
+    .experience:last-child {
+      margin-right: 0;
+    }
+  }
+
+  .experiences-container::-webkit-scrollbar {
+    display: none;
+  }
+}

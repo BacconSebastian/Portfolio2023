@@ -1,0 +1,80 @@
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  flex: 0 0 auto;
+
+  .name {
+    font-weight: bold;
+  }
+
+  .hamburguer-icon {
+    position: absolute;
+    right: 2rem;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    padding: 0;
+    background-color: #FFFFFF;
+    z-index: 2;
+    transition: all ease 1s;
+  }
+
+  .hamburguer-icon.expanded {
+    right: -80vh;
+    width: 220vh;
+    height: 220vh;
+  }
+
+  .close-expanded {
+    position: absolute;
+    z-index: 2;
+    top: -12.5rem;
+    right: -4.5rem;
+    background-color: transparent;
+    border: none;
+
+    transition: all ease 1s;
+  }
+
+  .close-expanded.expanded {
+    top: 1.5rem;
+    right: 1.5rem;
+    
+    transition: all ease 1s;
+  }
+
+  .nav-buttons {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    z-index: 2;
+    top: -12.5rem;
+    right: -4.5rem;
+
+    transition: all ease 1s;
+
+    .nav-button {
+      margin-bottom: 2rem;
+      background-color: transparent;
+      border: none;
+      font-size: 1rem;
+      font-weight: 300;
+      text-transform: uppercase;
+    }
+
+    .nav-button:last-child {
+      margin: 0;
+    }
+  }
+  
+  .nav-buttons.expanded {
+    z-index: 2;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%, -50%);
+    
+    transition: all ease 1s;
+  }
+}

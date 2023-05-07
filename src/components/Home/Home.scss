@@ -1,0 +1,63 @@
+.home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0 2rem 8rem 2rem;
+  flex: 1;
+
+  .profile {
+    height: 15vh;
+    margin-bottom: 2rem;
+    border-radius: 50%;
+    padding: 1rem;
+  
+    animation: background-efect 3s infinite;
+  }
+
+  .head-info {
+    margin-bottom: 3rem;
+
+    h1 {
+      font-size: 2rem;
+    }
+
+    h2 {
+      padding-left: 1rem;
+      color: #50b5d7;
+      filter: drop-shadow(0 0 1px #FFFFFF);
+    }
+  }
+
+  .description {
+    display: flex;
+
+    img {
+      margin-right: 1rem;
+      padding-left: 1rem;
+    }
+
+    p {
+      font-size: 1rem;
+
+      span {
+        font-weight: 600;
+      }
+    }
+  }
+}
+
+@keyframes background-efect {
+  0% {
+    background-color: transparent;
+  }
+  
+  50% {
+    background-color: rgb(80, 181, 215, 2%);
+    box-shadow: 0 0 100px rgb(80, 181, 215, 5%);
+  }
+
+  100% {
+    background-color: transparent;
+  }
+}
