@@ -1,5 +1,3 @@
-import { useEffect, useState } from "react";
-
 import "./Experience.scss";
 import ExperienceIcon from "../../assets/experience.png"
 import Landing from "../../assets/Landing.png"
