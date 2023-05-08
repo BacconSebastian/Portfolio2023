@@ -23,8 +23,7 @@ const Experience = () => {
           <img src={DevWeb} alt="" />
           <p className="description">
             <span>Web development</span> oriented to insurance companies for the consultancy ABS-TI.<br/><br/>
-            I work on frontend and backend, although my specialty is the front with React/Next + Typescript.<br/><br/>
-            I use technologies like <span>React, Next, Angular, Javascript, Typescript, Java, Node, Springboot</span>.<br/><br/>
+            I work on frontend and backend, although my specialty is the front with React/Next + Typescript. I use technologies like <span>React, Next, Angular, Javascript, Typescript, Java, Node, Springboot</span>.<br/><br/>
             Aug 2022 - Current
           </p>
           <div className="right-icons">
