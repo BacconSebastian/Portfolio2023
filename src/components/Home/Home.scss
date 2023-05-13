@@ -33,6 +33,7 @@
 
   .description {
     display: flex;
+    align-items: center;
 
     img {
       margin-right: 1rem;
@@ -49,14 +50,53 @@
   }
 }
 
+@media (min-width: 1024px) {
+  .home {
+    .profile {
+      height: 20vh;
+    }
+
+    .head-info {
+  
+      h1 {
+        font-size: 3rem;
+      }
+  
+      h2 {
+        padding-left: 1rem;
+        color: #50b5d7;
+        font-size: 2rem;
+        font-weight: 900;
+      }
+    }
+
+    .description {
+      padding: 0 14rem;
+  
+      img {
+        margin-right: 2rem;
+        padding-left: 1rem;
+      }
+  
+      p {
+        font-size: 1.5rem;
+  
+        span {
+          font-weight: 600;
+        }
+      }
+    }
+  }
+}
+
 @keyframes background-effect {
   0% {
     background-color: transparent;
   }
   
   50% {
-    background-color: rgb(80, 181, 215, 2%);
-    box-shadow: 0 0 100px rgb(80, 181, 215, 5%);
+    background-color: rgb(80, 181, 215, 10%);
+    box-shadow: 0 0 100px rgb(80, 181, 215, 30%);
   }
 
   100% {

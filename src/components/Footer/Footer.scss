@@ -11,6 +11,14 @@ footer {
     font-weight: 600;
   }
 
+  .mobile {
+    display: block;
+  }
+
+  .web {
+    display: none;
+  }
+
   .social {
     display: flex;
 
@@ -21,6 +29,22 @@ footer {
         margin-left: 1rem;filter:
         brightness(100);
       }
+    }
+  }
+}
+
+@media (min-width: 1024px) {
+  footer {
+    p {
+      font-size: 1rem;
+    }
+
+    .web {
+      display: block;
+    }
+
+    .mobile {
+      display: none;
     }
   }
 }

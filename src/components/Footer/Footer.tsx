@@ -5,7 +5,8 @@ import Github from "../../assets/github.svg"
 const Footer = () => {
   return (
     <footer>
-      <p>Copyright © 2023.<br/>All rights are reserved</p>
+      <p className="mobile">Copyright © 2023.<br/>All rights are reserved</p>
+      <p className="web">Copyright © 2023. All rights are reserved</p>
       <div className="social">
         <a href="https://www.linkedin.com/in/bacconsebastian/" target="_blank">
           <img className="icon" src={Linkedin} alt="" />

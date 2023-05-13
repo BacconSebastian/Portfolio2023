@@ -7,9 +7,7 @@ import Linkedin from "../../assets/linkedin.svg"
 const Contact = () => {
   return (
     <div id="contact" className="contact">
-      {/* <img className="icon second" src={Confeti2} alt="" />
-      <img className="icon first" src={Confeti} alt="" /> */}
-      <h1>Contact me!</h1>
+      <h2>Contact me!</h2>
       <a className="contact-data clickeable" href="mailto:bacconsebastian@gmail.com?subject=We%20are%20hiring&amp;body=" target="_blank">
         <img className="icon" src={Gmail} alt="" />
         <p>bacconsebastian@gmail.com</p>

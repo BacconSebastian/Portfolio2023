@@ -17,28 +17,24 @@ import SwipeLeft from "../../assets/swipe-left.svg"
 const Experience = () => {
 
   const [swipeLeft, setSwipteLeft] = useState<boolean>(true)
-
-  const experiencesContainer = document.getElementById("scroll")
-
+  
   useEffect(() => {
-    console.log(experiencesContainer)
+    const experiencesContainer = document.getElementById("scroll")
     experiencesContainer?.addEventListener("scroll", () => {
       if (experiencesContainer.scrollWidth > 0) {
         setSwipteLeft(false)
       }
     });
-
-    () => {
-      experiencesContainer?.removeEventListener("scroll", () => {})
-    }
   }, [])
 
   return (
     <div id="experiences" className="experiences">
       <div className="experiences-container" id="scroll">
         <div className={"experience"}>
-          <h1 className="title">Fullstack Developer</h1>
-          <img src={DevWeb} alt="" />
+          <div className="left-side">
+            <h2 className="title">Fullstack Developer</h2>
+            <img src={DevWeb} alt="" />
+          </div>
           <p className="description">
             <span>Web development</span> oriented to insurance companies for the consultancy ABS-TI.<br/><br/>
             I work on frontend and backend, although my specialty is the front with React/Next + Typescript. I use technologies like <span>React, Next, Angular, Javascript, Typescript, Java, Node, Springboot</span>.<br/><br/>
@@ -51,8 +47,10 @@ const Experience = () => {
           </div>
         </div>
         <div className={"experience"}>
-          <h1 className="title">Cordial E-Commerce</h1>
-          <img src={Cordial} alt="" />
+          <div className="left-side">
+            <h2 className="title">Cordial E-Commerce</h2>
+            <img src={Cordial} alt="" />
+          </div>
           <p className="description">
             We developed an <span>E-Commerce</span> for Cordial, which will have its functionality in Paraguay.
             <br/><br/>In this development we handle user data, purchases, sales, permissions, among many other things.
@@ -66,8 +64,10 @@ const Experience = () => {
           </div>
         </div>
         <div className={"experience"}>
-          <h1 className="title">SMG Landing Page</h1>
-          <img src={Landing} alt="" />
+          <div className="left-side">
+            <h2 className="title">SMG Landing Page</h2>
+            <img src={Landing} alt="" />
+          </div>
           <p className="description">
             We developed a static page for Swiss Medical Group, which works as a <span>Landing Page</span> for a first
             contact with customers.<br/><br/>You also have the option to send emails of consultation, quote, etc.
@@ -81,10 +81,12 @@ const Experience = () => {
           </div>
         </div>
         <div className={"experience"}>
-          <h1 className="title">Virtual Office</h1>
-          <img src={OV} alt="" />
+          <div className="left-side">
+            <h2 className="title">Virtual Office</h2>
+            <img src={OV} alt="" />
+          </div>
           <p className="description">
-            We developed a <span>Virtual Office</span> for SMG employees to facilitate inquiries about the company's customer data
+            We developed a <span>Virtual Office</span> for SMG employees to facilitate inquiries about the company's customer data.<br/><br/>In addition, we migrated from an old database to a much more modern one to speed up the query.
           </p>
           <div className="right-icons">
             <img className="first-tech" src={React} alt="" />

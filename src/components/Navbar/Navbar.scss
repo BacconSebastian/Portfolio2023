@@ -64,6 +64,7 @@ nav {
     z-index: 2;
     top: -12.5rem;
     right: -4.5rem;
+    transform: translate(50%, -50%);
 
     transition: all ease 1s;
 
@@ -89,7 +90,6 @@ nav {
     z-index: 2;
     top: 50%;
     right: 50%;
-    transform: translate(50%, -50%);
     
     transition: all ease 1s;
 
@@ -104,5 +104,41 @@ nav {
         
       transition: all ease 2s;
     }
+  }
+
+  .click-here {
+    position: absolute;
+    right: 5.5rem;
+    top: 3rem;
+    width: 40px;
+    height: 40px;
+    z-index: 6;
+
+    animation: clickhere 3s infinite;
+  }
+}
+
+@media (min-width: 1024px) {
+  nav {
+    .hamburguer-icon.expanded {
+      top: -100vh;
+      right: -80vh;
+      width: 350vh;
+      height: 320vh;
+    }
+  }
+}
+
+@keyframes clickhere {
+  0% {
+    padding-top: 0;
+  }
+  
+  50% {
+    padding-top: 1rem;
+  }
+  
+  100% {
+    padding-top: 0;
   }
 }
