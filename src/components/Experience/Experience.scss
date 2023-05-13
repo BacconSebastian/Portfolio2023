@@ -163,7 +163,7 @@
         flex-direction: row;
         align-items: center;
         margin-bottom: 6rem;
-        padding: 1rem;
+        padding: 1rem 2rem;
         box-sizing: border-box;
         z-index: 1;
   
@@ -179,9 +179,31 @@
         }
   
         .right-icons {
-          left: 2rem;
-          bottom: -8rem;
+          flex-direction: column-reverse;
+          left: 0rem;
+          top: 5rem;
           width: fit-content;
+          height: fit-content;
+
+          .redirect {
+            margin: 0;
+            margin-bottom: .8rem;
+          }
+  
+          .first-tech {
+            margin: 0;
+            margin-bottom: 1rem;
+          }
+          
+          .second-tech {
+            margin: 0;
+            margin-bottom: 1rem;
+          }
+          
+          .next {
+            margin: 0;
+            margin-bottom: 1rem;
+          }
         }
       }
 

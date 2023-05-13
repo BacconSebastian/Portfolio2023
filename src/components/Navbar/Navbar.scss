@@ -19,6 +19,7 @@ nav {
 
   .hamburguer-icon {
     position: fixed;
+    cursor: pointer;
     right: 2rem;
     top: calc(2rem - 10px);
     width: 20px;
@@ -32,6 +33,7 @@ nav {
   
   .hamburguer-icon.expanded {
     background-color: #FFFFFF;
+    cursor: default;
     top: -100vh;
     right: -80vh;
     width: 250vh;
@@ -39,6 +41,7 @@ nav {
   }
 
   .close-expanded {
+    cursor: pointer;
     position: fixed;
     z-index: 2;
     top: -12.5rem;

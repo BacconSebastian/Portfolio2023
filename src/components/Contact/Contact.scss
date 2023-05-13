@@ -24,10 +24,16 @@
     background-color: hsla(195, 63%, 58%, 0.1);
     padding: .5rem 1rem;
     border-radius: 10px;
-
+    transition: all ease 1s;
+    
     img {
       margin-right: 1rem;
     }
+  }
+  
+  .contact-data:hover {
+    background-color: hsla(195, 63%, 58%, 0.25);
+    transition: all ease 1s;
   }
 }
 
