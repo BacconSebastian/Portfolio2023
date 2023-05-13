@@ -4,7 +4,7 @@ import Profile from "../../assets/profile.png"
 
 const Home = () => {
   return (
-    <div className="home">
+    <div id="home" className="home">
       <img className="profile" src={Profile} alt="" />
       <div className="head-info">
         <h1>Fullstack Developer</h1>

@@ -1,19 +1,11 @@
 import "./Abouts.scss"
-import ComputerMan from "../../assets/computer-man.svg"
-import Code from "../../assets/code.svg"
 
 const About = () => {
 
   return (
-    <div className="about">
-      <div className="images-container">
-        <img className="about-image" src={ComputerMan} alt="" />
-        <img className="code-one" src={Code} alt="" />
-        <img className="code-two" src={Code} alt="" />
-        <img className="code-three" src={Code} alt="" />
-        <img className="code-four" src={Code} alt="" />
-      </div>
-      <h1>I'm a dedicated <span>Web Developer</span> based in Argentina.</h1>
+    <div id="about" className="about">
+      <h1>About me</h1>
+      <h2>I'm a dedicated <span>Web Developer</span> based in Argentina.</h2>
       <div className="about-description">
         <div className="paragraph">
           <div className="marker"></div>

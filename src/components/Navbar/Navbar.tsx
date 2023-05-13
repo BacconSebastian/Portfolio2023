@@ -1,20 +1,14 @@
 import { useState } from "react"
-import { NavBarProps } from "../../interfaces/components/navbar";
 
 import "./Navbar.scss"
 import CloseIcon from '@mui/icons-material/Close';
 
-const Navbar = ({ setNavValue }: NavBarProps) => {
+const Navbar = () => {
 
   const [expanded, setExpanded] = useState<boolean>(false)
 
   const handleExpand = (expand: boolean) => {
     setExpanded(expand)
-  }
-
-  const handleNavValue = (e: any) => {
-    setNavValue(e.target.name)
-    setExpanded(false)
   }
 
   return (
@@ -25,18 +19,10 @@ const Navbar = ({ setNavValue }: NavBarProps) => {
       <button className={expanded ? "close-expanded expanded" : "close-expanded"} onClick={() => handleExpand(false)}><CloseIcon /></button>
       
       <div className={expanded ? "nav-buttons expanded" : "nav-buttons"}>
-        <button onClick={(e) => handleNavValue(e)} name="home" className="nav-button">
-          Home
-        </button>
-        <button onClick={(e) => handleNavValue(e)} name="about" className="nav-button">
-          About
-        </button>
-        <button onClick={(e) => handleNavValue(e)} name="experience" className="nav-button">
-          Experience
-        </button>
-        <button onClick={(e) => handleNavValue(e)} name="contact" className="nav-button">
-          Contact
-        </button>
+        <a href="#home" onClick={() => {handleExpand(false)}} className="nav-button">Home</a>
+        <a href="#about" onClick={() => {handleExpand(false)}} className="nav-button">About</a>
+        <a href="#experiences" onClick={() => {handleExpand(false)}} className="nav-button">Experience</a>
+        <a href="#contact" onClick={() => {handleExpand(false)}} className="nav-button">Contact</a>
       </div>
     </nav>
   )

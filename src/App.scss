@@ -1,9 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,400&family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400&display=swap');
 
 html {
-  overflow: hidden;
-  background-color: #242424;
-  color: #FFFFFF;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  background-color: #FFFFFF;
+  color: #242424;
 }
 
 #root {
@@ -16,13 +17,17 @@ html {
   flex-direction: column;
 }
 
+body {
+  margin: 0;
+}
+
 p {
   margin: 0;
 }
 
 a {
   text-decoration: none;
-  color: #242424;
+  color: #FFFFFF;
 }
 
 h1 {
@@ -39,22 +44,4 @@ h2 {
 
 .icon {
   width: 40px;
-}
-
-.clickeable {
-  animation: clickable 3s 2;
-}
-
-@keyframes clickable {
-  0% {
-    opacity: 1;
-  }
-  
-  50% {
-    opacity: 0.75;
-  }
-  
-  100% {
-    opacity: 1;
-  }
 }

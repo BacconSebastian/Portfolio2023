@@ -1,13 +1,15 @@
 import "./Contact.scss"
 import Gmail from "../../assets/gmail.svg"
 import Linkedin from "../../assets/linkedin.svg"
-import Confeti from "../../assets/confeti.svg"
-import Confeti2 from "../../assets/confeti2.svg"
+// import Confeti from "../../assets/confeti.svg"
+// import Confeti2 from "../../assets/confeti2.svg"
 
 const Contact = () => {
   return (
-    <div className="contact">
-      <h1><img className="icon second" src={Confeti2} alt="" />Contact me!<img className="icon first" src={Confeti} alt="" /></h1>
+    <div id="contact" className="contact">
+      {/* <img className="icon second" src={Confeti2} alt="" />
+      <img className="icon first" src={Confeti} alt="" /> */}
+      <h1>Contact me!</h1>
       <a className="contact-data clickeable" href="mailto:bacconsebastian@gmail.com?subject=We%20are%20hiring&amp;body=" target="_blank">
         <img className="icon" src={Gmail} alt="" />
         <p>bacconsebastian@gmail.com</p>

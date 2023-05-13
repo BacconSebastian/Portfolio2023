@@ -1,5 +1,6 @@
+import { useEffect, useState } from "react";
+
 import "./Experience.scss";
-import ExperienceIcon from "../../assets/experience.png"
 import Landing from "../../assets/Landing.png"
 import Cordial from "../../assets/cordial.png"
 import OV from "../../assets/ov.jpg"
@@ -9,14 +10,31 @@ import Node from "../../assets/nodejs.svg"
 import Angular from "../../assets/angular.svg"
 import Typescript from "../../assets/typescript.svg"
 import Java from "../../assets/java.svg"
-import Redirect from "../../assets/redirect.svg"
+import Redirect from "../../assets/link.svg"
 import DevWeb from "../../assets/dev-web.webp"
+import SwipeLeft from "../../assets/swipe-left.svg"
 
 const Experience = () => {
 
+  const [swipeLeft, setSwipteLeft] = useState<boolean>(true)
+
+  const experiencesContainer = document.getElementById("scroll")
+
+  useEffect(() => {
+    console.log(experiencesContainer)
+    experiencesContainer?.addEventListener("scroll", () => {
+      if (experiencesContainer.scrollWidth > 0) {
+        setSwipteLeft(false)
+      }
+    });
+
+    () => {
+      experiencesContainer?.removeEventListener("scroll", () => {})
+    }
+  }, [])
+
   return (
-    <div className="experiences">
-      <img className={"experience-icon"} src={ExperienceIcon} alt="" />
+    <div id="experiences" className="experiences">
       <div className="experiences-container" id="scroll">
         <div className={"experience"}>
           <h1 className="title">Fullstack Developer</h1>
@@ -73,6 +91,12 @@ const Experience = () => {
             <img className="second-tech" src={Java} alt="" />
           </div>
         </div>
+        {
+          swipeLeft &&
+          <div className="right-pointer">
+            <img className="icon" src={SwipeLeft} alt="" />
+          </div>
+        }
       </div>
     </div>
   )

@@ -1,0 +1,26 @@
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 2rem;
+  padding: 1rem 2rem;
+  background-color: #242424;
+
+  p {
+    color: #FFFFFF;
+    font-weight: 600;
+  }
+
+  .social {
+    display: flex;
+
+    a {
+      img {
+        width: 25px;
+        height: 25px;
+        margin-left: 1rem;filter:
+        brightness(100);
+      }
+    }
+  }
+}
